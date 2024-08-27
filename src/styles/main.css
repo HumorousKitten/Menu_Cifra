@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(./reset.css);
+
+:root {
+	--colors-primary-400main: #2d609b;
+	--colors-primary-500variant: #4680b0;
+	--colors-primary-100variant: #0d1e4a;
+
+	--accent: #7ebbed;
+
+	--colors-background-gray-100main: #f2f2f2;
+	--colors-background-blue-300: #bad0e2;
+	--colors-background-gray-500disabled: #dcd8e0;
+	--colors-background-gray-200modal: #f7f2fa;
+
+	--colors-text-black-300: #333;
+	/* --colors-text-gray-200: #1d1b20; */
+	--colors-text-gray-400: #a8a3ab;
+	--colors-text-gray-600outline-labels: #49454f;
+	--colors-text-black-200: #49454f;
+
+	--colors-outline-gray-900border: #79747e;
+	--colors-outline-gray-400disabled: #bcbabf;
+	--colors-outline-gray-300icons: #c4cdd5;
+	--colors-outline-gray-300light: #d3d3d3;
+
+	--colors-success-500: #12b76a;
+	--colors-success-100: #d1fadf;
+
+
+	--font-family: "Roboto", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.header {
+	background: var(--colors-background-blue-300);
+	border-bottom: 1px solid var(--colors-outline-gray-900border);
+	padding: 0.5rem;
+}
+
+.header_title {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 0.875rem;
+	color: var(--colors-text-black-300);
+}
+
+.main {
+	background: var(--colors-background-gray-100main);
+	flex-grow: 1;
+}
+
+.main_menu {
+	padding-top: 0.5rem;
+}
+
+.menu_item {
+	padding: 0.813rem;
+	display: flex;
+	align-items: center;
+}
+
+.menu_text {
+	margin-left: 0.75rem;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 0.875rem;
+	letter-spacing: 0.04em;
+	color: var(--colors-text-gray-400);
+}
+
+.selectedText {
+	color: var(--colors-text-black-300);
+}
+
+.menu_item .selectedIcon > path{
+	stroke: var(--colors-text-black-300)
+}
+
+.menu_item svg path{
+	stroke: var(--colors-text-gray-400);
+}
+
+.footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+	background: var(--colors-background-gray-100main);
+	/* position: absolute;
+	bottom: 0; */
+}
+
+.footer_item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.313rem 0.25rem;
+	justify-content: center;
+}
+
+.footer_item span {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 0.75rem;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: var(--color-text-black-300);
+	line-height: 133%;
+}
+
