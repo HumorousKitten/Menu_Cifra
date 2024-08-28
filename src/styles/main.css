@@ -74,6 +74,10 @@ body {
 	color: var(--colors-text-gray-400);
 }
 
+.none-ml {
+	margin-left: 0;
+}
+
 .selectedText {
 	color: var(--colors-text-black-300);
 }
