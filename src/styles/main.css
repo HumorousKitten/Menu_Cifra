@@ -59,7 +59,7 @@ body {
 	padding-top: 0.5rem;
 }
 
-.menu_item {
+.menu_item a{
 	padding: 0.813rem;
 	display: flex;
 	align-items: center;
