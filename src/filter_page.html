@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/main.css" />
+		<title>Фильтр ВЗН</title>
+	</head>
+	<body>
+		<header class="header header_gray-bg header-flex">
+			<img src="/public/images/icons/header/close-icon.svg" alt="close-icon" />
+			<span class="header_title header_title-ml">Фильтр ВЗН УП</span>
+		</header>
+
+		<main class="main">
+			<form class="main_form">
+				<fieldset class="form_item">
+					<legend>Номер ВЗН</legend>
+					<input type="number" />
+				</fieldset>
+
+				<fieldset class="form_item">
+					<legend>Отправитель</legend>
+					<input type="text" />
+				</fieldset>
+
+				<fieldset class="form_item">
+					<legend>Получатель</legend>
+					<input type="text" />
+				</fieldset>
+
+				<fieldset class="form_item">
+					<legend>Дата принятия (период)</legend>
+					<input type="date" />
+				</fieldset>
+
+				<div class="form_btns">
+					<a href="listVZN_page">
+						<button class="btn_bg-blue btn_border-none">
+							Поиск
+						</button>
+					</a>
+					<button class="btn_bg-transparent btn_color-blue">
+						Отмена
+					</button>
+				</div>
+			</form>
+		</main>
+
+		<footer class="footer">
+			<div class="footer_item">
+				<img src="/public/images/icons/footer/menu_24px.svg" alt="menu" />
+				<span>Меню</span>
+			</div>
+			<div class="footer_item">
+				<img src="/public/images/icons/footer/scanner.svg" alt="scanner" />
+				<span>Сканер</span>
+			</div>
+			<div class="footer_item">
+				<img
+					src="/public/images/icons/footer/arrow_back_24px.svg"
+					alt="arrow_back"
+				/>
+				<span>Назад</span>
+			</div>
+		</footer>
+	</body>
+</html>

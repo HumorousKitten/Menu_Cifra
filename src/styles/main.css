@@ -12,6 +12,7 @@
 	--colors-background-blue-300: #bad0e2;
 	--colors-background-gray-500disabled: #dcd8e0;
 	--colors-background-gray-200modal: #f7f2fa;
+	--colors-background-white-label: #fef7ff;
 
 	--colors-text-black-300: #333;
 	/* --colors-text-gray-200: #1d1b20; */
@@ -43,6 +44,15 @@ body {
 	padding: 0.5rem;
 }
 
+.header_gray-bg {
+	background: var(--colors-background-gray-100main);
+}
+
+.header-flex {
+	display: flex;
+	align-items: center;
+}
+
 .header_title {
 	font-family: var(--font-family);
 	font-weight: 500;
@@ -50,9 +60,81 @@ body {
 	color: var(--colors-text-black-300);
 }
 
+.header_title-ml {
+	margin-left: 0.5rem;
+}
+
 .main {
 	background: var(--colors-background-gray-100main);
 	flex-grow: 1;
+}
+
+.main_form {
+	width: calc(100% - 1rem);
+	margin-top: 3.375rem;
+	margin-inline: auto;
+}
+
+.form_item {
+	border: 1px solid var(--colors-outline-gray-900border);
+	border-radius: 0.25rem;
+}
+
+.form_item legend {
+	background: var(--colors-background-white-label);
+	color: var(--colors-text-gray-600outline-labels);
+	font-weight: 400;
+	font-size: 0.75rem;
+	margin-left: 0.7rem;
+	padding: 0.3rem;
+}
+
+.form_item input {
+	padding: 0.3rem 0.3rem 0.68rem 0.3rem; 
+	font-size: 0.938rem;
+	font-weight: 400;
+	letter-spacing: 0.03em;
+	color: var(--colors-text-black-300);
+}
+
+.form_btns {
+	display: flex;
+	outline: none;
+	justify-content: center;
+	padding: 0.375rem 2.625rem;
+	margin-top: 0.25rem;
+}
+
+.form_btns button {
+	font-family: var(--font-family);
+	border-radius: 6.25rem;
+	border: 1px solid var(--colors-outline-gray-900border);
+	font-size: 0.875rem;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	text-align: center;
+	padding: 0.625rem 1.5rem;
+}
+
+.form_btns > a + button {
+	margin-left: 0.625rem;
+}
+
+.btn_bg-blue {
+	background: var(--colors-primary-400main);
+	color: var(--colors-background-gray-100main);
+}
+
+.btn_border-none {
+	border: none;
+}
+
+.btn_bg-transparent{
+	background: transparent;
+}
+
+.btn_color-blue{
+	color: var(--colors-primary-400main);
 }
 
 .main_menu {
