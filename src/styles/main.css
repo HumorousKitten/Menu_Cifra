@@ -90,11 +90,26 @@ body {
 }
 
 .form_item input {
+	width: 100%;
 	padding: 0.3rem 0.3rem 0.68rem 0.3rem; 
 	font-size: 0.938rem;
 	font-weight: 400;
 	letter-spacing: 0.03em;
 	color: var(--colors-text-black-300);
+}
+
+.border_color-error {
+	border: 2px solid red;
+}
+
+.border_color-success {
+	border: 2px solid green;
+}
+
+.form_error-text {
+	font-family: var(--font-family);
+	font-size: 0.7rem;
+	color: red;
 }
 
 .form_btns {
@@ -116,7 +131,7 @@ body {
 	padding: 0.625rem 1.5rem;
 }
 
-.form_btns > a + button {
+.form_btns > button + button {
 	margin-left: 0.625rem;
 }
 
