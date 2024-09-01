@@ -90,11 +90,26 @@ body {
 }
 
 .form_item input {
+	width: 100%;
 	padding: 0.3rem 0.3rem 0.68rem 0.3rem; 
 	font-size: 0.938rem;
 	font-weight: 400;
 	letter-spacing: 0.03em;
 	color: var(--colors-text-black-300);
+}
+
+.border_color-error {
+	border: 2px solid red;
+}
+
+.border_color-success {
+	border: 2px solid green;
+}
+
+.form_error-text {
+	font-family: var(--font-family);
+	font-size: 0.7rem;
+	color: red;
 }
 
 .form_btns {
@@ -183,12 +198,16 @@ body {
 	bottom: 0; */
 }
 
-.footer_item {
+.footer_item a{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 0.313rem 0.25rem;
 	justify-content: center;
+}
+
+.footer_item a {
+	color: var(--color-text-black-300);
 }
 
 .footer_item span {
@@ -197,7 +216,6 @@ body {
 	font-size: 0.75rem;
 	letter-spacing: 0.04em;
 	text-align: center;
-	color: var(--color-text-black-300);
 	line-height: 133%;
 }
 
