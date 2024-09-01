@@ -1,10 +1,3 @@
-// document.getElementById('btn-search').addEventListener('click', function (event) {
-// 	event.preventDefault()
-// 	console.log('click')
-// })
-
-// сделать чтобы при клике он переходил на другую страницу через определенное время, если все поля верны
-
 document.getElementById('btn-search').addEventListener('touchstart', function (event) {
 	event.preventDefault()
 	validate(document.getElementById('main_form'))
