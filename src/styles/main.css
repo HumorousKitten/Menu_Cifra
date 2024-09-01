@@ -64,9 +64,70 @@ body {
 	margin-left: 0.5rem;
 }
 
+.header_btns {
+	display: flex;
+	flex-grow: 1;
+	justify-content: end;
+}
+
+.header_btns button {
+	display: flex;
+	align-items: center;
+	padding: 0.25rem 0.813rem;
+	border-radius: 6.25rem;
+	background: var(--colors-primary-400main);
+	color: #fff;
+	font-family: var(--font-family);
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	font-size: 0.625rem;
+}
+
+.header_btns button span {
+	margin-left: 0.188rem;
+}
+
+.header_btns button + button {
+	margin-left: 0.25rem;
+}
+
 .main {
 	background: var(--colors-background-gray-100main);
 	flex-grow: 1;
+}
+
+.main_listOfData {
+	width: calc(100% - 1rem);
+	border: 1px solid var(--colors-outline-gray-900border);
+	border-radius: 0.25rem;
+	margin-inline: auto;
+	margin-top: 0.25rem;
+	max-height: 79vh;
+	overflow-y: scroll;
+}
+
+.listOfData_item {
+	border-bottom: 0.20px solid var(--colors-outline-gray-900border);
+	padding: 0.25rem;
+}
+
+.listOfData_item h4 {
+	font-family: var(--font-family);
+	font-size: 0.75rem;
+	letter-spacing: 0.04em;
+	color: var(--colors-text-black-300);
+}
+
+.listOfData_item p {
+	font-family: var(--font-family);
+	font-size: 0.625rem;
+	letter-spacing: 0.03em;
+	color: var(--colors-text-gray-600outline-labels);
+	font-weight: 400;
+}
+
+.listOfData_item p span{
+	font-weight: 900;
 }
 
 .main_form {
