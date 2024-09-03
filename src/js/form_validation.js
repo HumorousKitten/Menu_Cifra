@@ -8,6 +8,9 @@ document.getElementById('btn-cancel').addEventListener('touchstart', function (e
 	clearForm(document.getElementById('main_form'))
 })
 
+document.getElementById('main_form').querySelectorAll('input[type=number]')[0].addEventListener('keydown', handleAllowNumbers)
+
+
 function clearForm(form) {
 	const FORM_INPUTS = Array.from(form.querySelectorAll('input'))
 	FORM_INPUTS.forEach((elem) => {
@@ -59,6 +62,13 @@ function createError(elem, error, hasError) {
 	errorText.textContent = error
 	parentNode.after(errorText)
 }
+
+function handleAllowNumbers(e) {
+  if (e.target.type === "number" && !e.key.match(/^[0-9]+$/) && e.key !== 'Backspace') {
+    e.preventDefault();
+  }
+};
+
 
 function validatePositiveNumber(value) {
 	const regex = /^[1-9]\d{1,20}$/;
